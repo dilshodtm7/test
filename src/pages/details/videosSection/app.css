@@ -1,0 +1,130 @@
+/* App.css */
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Container for the video player */
+  .video-container {
+    margin: 0 auto;
+   width: 70%;
+
+    transition: box-shadow 0.3s;
+  }
+  
+  .video-container:hover {
+    cursor: pointer;
+  }
+  
+  /* Video element styles */
+  .video-element {
+    width: 100%;
+
+    border-radius: 10px;
+  }
+  
+  /* Time and volume display styles */
+  .time {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  
+  
+  /* Controls container styles */
+  .controls {
+    display: flex;
+  }
+  
+  #video-slider {
+    width: 98%;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  /* Icon styles */
+  .icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #f39c12; /* Change this color as needed */
+  }
+  
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .d-flex-play {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 40%;
+  }
+  
+  .d-flex-full {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+  
+  .top-50 {
+    width: 98%;
+    position: relative;
+    top: -100px;
+    transition: all 2s ease;
+  }
+  
+  .d-none {
+    z-index: -1;
+    visibility: hidden;
+    transition: all 5s ease;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 1024px) {
+    .video-container {
+      width: 95%;
+    }
+  
+    .d-flex-play {
+      right: 41%;
+    }
+  
+    .d-flex-full {
+      right: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .d-flex-play {
+      right: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .d-flex-play {
+      right: 35%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .d-flex-play {
+      right: 35%;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .d-flex-play {
+      right: 30%;
+    }
+  }
+  
